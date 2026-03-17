@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dice1, #dice2 {
+    background-color: orangered;
+    height: 200px;
+    width: 200px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    
+}
+#gap{
+    display: flex ;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#down{
+   flex-direction: column;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.addRotate{
+    transform: rotate(360deg);
+     transition: all 2s 1ms linear;
+}
+    </style>
+</head>
+<body>
+
+<center><h1>Dice Game</h1></center>
+
+<div class="container">
+    <div id="gap">
+    <div id="dice1">
+      <h2 id="h2">0</h2>
+    </div>
+    <div id="dice2">
+        <h2 id="h3">0</h2>
+    </div>
+</div>
+    <div id="down">
+    <h2 id="result">result:</h2>
+    <button id="btn" onclick="diceGame()">Roll</button>
+    </div>
+  <audio id="sound" src="./u_qpfzpydtro-dice-142528.mp3"></audio>
+</div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
